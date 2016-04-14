@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-c8f183d9043bd3a728c205cec3168463599a27cc       	puppet-ntp-distgit-core
-931aab1964d929813d81ba786b9596ea2c4576ef        	puppet-ntp-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+931aab1964d929813d81ba786b9596ea2c4576ef	puppet/puppet-ntp-distgit-ptl
+c8f183d9043bd3a728c205cec3168463599a27cc	puppet-ntp-distgit-core
+global:Registered-Users                 	Registered Users
