@@ -1,4 +1,10 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-ntp
+%global commit d93d4b66c6818c9a7281d5af173bbde582fd299c
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-ntp
 Version:        XXX
@@ -8,7 +14,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-ntp
 
-Source0:        https://github.com/puppetlabs/puppetlabs-ntp/archive/%{version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
