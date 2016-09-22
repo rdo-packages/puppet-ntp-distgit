@@ -7,8 +7,8 @@
 
 
 Name:           puppet-ntp
-Version:        XXX
-Release:        XXX
+Version:        4.2.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs, configures, and manages the NTP service.
 License:        Apache-2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ntp/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 4.2.0-1.d93d4b6.git
+- Newton update 4.2.0 (d93d4b66c6818c9a7281d5af173bbde582fd299c)
+
 
