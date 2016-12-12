@@ -49,4 +49,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ntp/
 
 
 %changelog
-
