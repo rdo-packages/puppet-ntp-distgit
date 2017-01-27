@@ -5,7 +5,7 @@ Name:           puppet-ntp
 Version:        4.2.0
 Release:        2%{?dist}
 Summary:        Installs, configures, and manages the NTP service.
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-ntp
 
