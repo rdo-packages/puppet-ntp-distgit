@@ -1,21 +1,16 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppetlabs-ntp
-%global commit 4.2.x
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 
 Name:           puppet-ntp
 Version:        4.2.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?dist}
 Summary:        Installs, configures, and manages the NTP service.
 License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-ntp
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{upstream_version}.tar.gz
 BuildArch:      noarch
 
 Requires:       puppet-stdlib
@@ -49,7 +44,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ntp/
 
 
 %changelog
+* Wed Oct 03 2018 Jon Schlueter <jschluet@redhat.org> 4.2.0-2
+- rebuild to reflect that we are at 4.2.0 tag on 4.2.x branch
+
 * Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 4.2.0-1.4.2.xgit
 - Update to post 4.2.0 (4.2.x)
-
-
