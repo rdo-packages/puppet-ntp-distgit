@@ -7,8 +7,8 @@
 
 
 Name:           puppet-ntp
-Version:        XXX
-Release:        XXX
+Version:        4.2.0
+Release:        1%{?dist}
 Summary:        Installs, configures, and manages the NTP service.
 License:        ASL 2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/ntp/
 
 
 %changelog
+* Wed Apr 10 2019 RDO <dev@lists.rdoproject.org> 4.2.0-1
+- Update to 4.2.0
+
 
